@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="87.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteka.gui.users.SuspendedBtnController">
+   <children>
+      <Button fx:id="activate_btn" mnemonicParsing="false" style="-fx-background-color: transparent;" onAction="#handleActivateAction" prefWidth="41.0">
+         <graphic>
+            <FontAwesomeIconView fill="#2fff14" glyphName="CHECK" selectionFill="#ff7300" size="25" />
+         </graphic>
+      </Button>
+      <Button fx:id="delete_btn" mnemonicParsing="false" style="-fx-background-color: transparent;" onAction="#handleDeleteAction" prefWidth="41.0">
+         <graphic>
+            <FontAwesomeIconView fill="RED" glyphName="TRASH" selectionStart="2" size="25" />
+         </graphic>
+      </Button>
+   </children>
+</HBox>

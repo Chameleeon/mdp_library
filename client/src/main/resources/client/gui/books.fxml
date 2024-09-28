@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox id="side_anchorpane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="1071.0" styleClass="root" stylesheets="@css/window.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.BookController">
+   <children>
+      <Pane prefHeight="679.0" prefWidth="14.0" />
+      <VBox fx:id="root_vbox" prefHeight="288.0" prefWidth="288.0" styleClass="root_vbox" stylesheets="@css/window.css">
+         <children>
+            <Pane prefHeight="12.0" prefWidth="283.0" />
+            <AnchorPane fx:id="side_ahcnorpane" prefHeight="655.0" prefWidth="347.0" styleClass="side_anchorpane">
+               <children>
+                  <Pane fx:id="inner_pane" layoutX="14.0" layoutY="14.0" prefHeight="80.0" prefWidth="261.0" styleClass="inner_pane" stylesheets="@css/window.css">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="46.0" layoutX="14.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assest/book_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Pane fx:id="most_inner_pane" layoutX="213.0" layoutY="11.0" prefHeight="62.0" prefWidth="35.0" styleClass="most_inner_pane" stylesheets="@css/window.css">
+                           <children>
+                              <ImageView fitHeight="62.0" fitWidth="25.0" layoutX="5.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assest/buttons.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Text fill="WHITE" layoutX="67.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-BIBLIOTEKA">
+                           <font>
+                              <Font name="Rockwell" size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <JFXButton fx:id="btn_home" layoutX="11.0" layoutY="133.0" onAction="#handleBtnHomeAction" prefHeight="51.0" prefWidth="261.0" styleClass="btn_home" stylesheets="@css/window.css" text="Dashboard" textFill="#fff4f4">
+                     <font>
+                        <Font name="Century Gothic Bold" size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assest/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_books" layoutX="14.0" layoutY="204.0" onAction="#handleBtnBooksAction" prefHeight="51.0" prefWidth="261.0" styleClass="btn_books" stylesheets="@css/window.css" text="Knjige" textFill="#fff4f4">
+                     <font>
+                        <Font name="Century Gothic Bold" size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assest/book.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_order" layoutX="15.0" layoutY="277.0" onAction="#handleBtnOrderAction" prefHeight="51.0" prefWidth="261.0" styleClass="btn_orders" stylesheets="@css/window.css" text="Predloži knjigu" textFill="#fff4f4">
+                     <font>
+                        <Font name="Century Gothic Bold" size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assest/notepad.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_chat" layoutX="15.0" layoutY="350.0" onAction="#handleBtnChatAction" prefHeight="51.0" prefWidth="261.0" styleClass="btn_orders" stylesheets="@css/window.css" text="Chat" textFill="#fff4f4">
+                     <font>
+                        <Font name="Century Gothic Bold" size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assest/conversation.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <stylesheets>
+                  <URL value="@css/window.css" />
+                  <URL value="@css/window.css" />
+               </stylesheets>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Pane fx:id="root_pane" prefHeight="679.0" prefWidth="783.0" stylesheets="@css/window.css">
+         <children>
+            <Pane layoutY="76.0" prefHeight="603.0" prefWidth="779.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="-24.0" text="Pregled dostupnih knjiga">
+                     <font>
+                        <Font name="Century Gothic Bold" size="38.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane fx:id="book_scroll_pane" layoutX="14.0" layoutY="102.0" prefHeight="488.0" prefWidth="752.0" stylesheets="@css/window.css">
+                     <content>
+                        <VBox fx:id="book_list" prefHeight="485.0" prefWidth="752.0" styleClass="user_list" stylesheets="@css/window.css" />
+                     </content>
+                  </ScrollPane>
+                  <TextField layoutX="498.0" layoutY="62.0" prefHeight="34.0" prefWidth="166.0" promptText="Pretraga" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-width: 0 0 2 0;">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="680.0" layoutY="50.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                  <FontAwesomeIconView fill="#515151" glyphName="SEARCH" layoutX="674.0" layoutY="90.0" size="20" />
+                  <JFXButton fx:id="order_btn" layoutX="14.0" layoutY="37.0" onAction="#handleOrderButton" prefHeight="51.0" prefWidth="215.0" styleClass="btn_books" stylesheets="@css/window.css" text="NARUČI ODABRANE" textFill="#fff4f4">
+                     <font>
+                        <Font name="Century Gothic Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</HBox>

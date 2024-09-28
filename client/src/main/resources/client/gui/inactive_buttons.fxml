@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="87.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteka.gui.users.InactiveBtnController">
+   <children>
+      <Button fx:id="activate_btn" mnemonicParsing="false" onAction="#handleActivateAction" style="-fx-background-color: transparent;">
+         <graphic>
+            <FontAwesomeIconView fill="#2fff14" glyphName="CHECK" selectionFill="#ff7300" size="25" />
+         </graphic>
+      </Button>
+      <Button fx:id="reject_btn" mnemonicParsing="false" onAction="#handleRejectAction" prefWidth="41.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <FontAwesomeIconView fill="RED" glyphName="CLOSE" selectionStart="2" size="25" />
+         </graphic>
+      </Button>
+   </children>
+</HBox>

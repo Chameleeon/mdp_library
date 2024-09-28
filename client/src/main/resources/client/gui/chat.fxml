@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox id="side_anchorpane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="1071.0" style="-fx-background-color: #3D3987;" styleClass="root" stylesheets="@css/window.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.ChatController">
+   <children>
+      <Pane prefHeight="679.0" prefWidth="14.0" style="-fx-background-color: #3D3987;" />
+      <VBox fx:id="root_vbox" layoutY="15.0" prefHeight="288.0" prefWidth="288.0" styleClass="root_vbox" stylesheets="@css/window.css">
+         <children>
+            <Pane prefHeight="12.0" prefWidth="283.0" />
+            <AnchorPane fx:id="side_ahcnorpane" prefHeight="655.0" prefWidth="283.0" styleClass="side_anchorpane">
+               <children>
+                  <ScrollPane fx:id="users_scroll_pane" layoutX="15.0" layoutY="18.0" prefHeight="626.0" prefWidth="260.0" style="-fx-background-color: transparent;">
+                     <content>
+                        <VBox fx:id="users_list_container" prefHeight="618.0" prefWidth="257.0">
+                           <children>
+                              <JFXButton fx:id="home_btn" contentDisplay="GRAPHIC_ONLY" onAction="#handleBtnHomeAction">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="20" />
+                                 </graphic>
+                              </JFXButton>
+                           </children></VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+               <stylesheets>
+                  <URL value="@css/window.css" />
+                  <URL value="@css/window.css" />
+               </stylesheets>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Pane fx:id="root_pane" prefHeight="679.0" prefWidth="783.0" style="-fx-background-color: #3D3987;" styleClass="root_pane" stylesheets="@css/window.css">
+         <children>
+            <Pane layoutY="14.0" prefHeight="62.0" prefWidth="783.0" />
+            <ScrollPane fx:id="chat_scroll_pane" layoutX="14.0" layoutY="14.0" prefHeight="591.0" prefWidth="766.0">
+               <content>
+                  <VBox fx:id="message_list_container" prefHeight="582.0" prefWidth="762.0" />
+               </content>
+            </ScrollPane>
+            <TextField fx:id="message_content" layoutX="14.0" layoutY="618.0" prefHeight="37.0" prefWidth="703.0" style="-fx-background-color: #2D3367; -fc-border-width: 2px 2px 2px 2px; -fx-border-color: #2D3367; -fx-border-radius: 40; -fx-text-inner-color: #ffffff;" />
+            <JFXButton fx:id="send_button" contentDisplay="GRAPHIC_ONLY" layoutX="721.0" layoutY="612.0" onAction="#handleBtnSendAction" prefHeight="43.0" prefWidth="43.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#80e1fc" glyphName="SEND" size="25" wrappingWidth="15.2000732421875" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</HBox>

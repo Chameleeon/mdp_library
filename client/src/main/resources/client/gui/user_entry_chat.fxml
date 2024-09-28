@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="71.0" prefWidth="253.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.UserChatEntryController">
+   <children>
+      <JFXButton fx:id="user_btn" layoutY="8.0" prefHeight="55.0" prefWidth="253.0" styleClass="btn_books" stylesheets="@css/window.css" text="Username" textFill="#fff4f4">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/avatar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</Pane>

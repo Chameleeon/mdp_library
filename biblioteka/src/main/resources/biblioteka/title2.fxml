@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="30.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="17.0" prefWidth="117.0" />
+      <Label prefHeight="30.0" prefWidth="172.0" text="Naslov">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label prefHeight="30.0" prefWidth="139.0" text="Autor">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="10.0" prefHeight="30.0" prefWidth="108.0" text="Datum objavljivanja">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="10.0" prefHeight="30.0" prefWidth="99.0" text="Jezik">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="TOP" prefHeight="30.0" prefWidth="112.0" text="Količina">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets left="5.0" />
+   </padding>
+</HBox>

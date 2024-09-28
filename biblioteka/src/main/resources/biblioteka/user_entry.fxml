@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" prefHeight="33.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteka.gui.users.UserItemController">
+   <children>
+      <Label fx:id="username_label" prefHeight="30.0" prefWidth="115.0" text="username">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="name_label" prefHeight="30.0" prefWidth="107.0" text="Name">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastname_label" prefHeight="30.0" prefWidth="101.0" text="Last Name">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="email_label" prefHeight="30.0" prefWidth="243.0" text="email">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="status_label" prefHeight="30.0" prefWidth="89.0" text="STATUS" textFill="#00cd07">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets left="5.0" />
+   </padding>
+</HBox>

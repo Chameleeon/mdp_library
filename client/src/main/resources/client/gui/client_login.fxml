@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.LoginController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #01697f;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="BOOK" layoutX="129.0" layoutY="150.0" size="100">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </FontAwesomeIconView>
+            <Text fill="WHITE" layoutX="47.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-BIBLIOTEKA">
+               <font>
+                  <Font name="Rockwell Extra Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="60.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klijentska aplikacija">
+               <font>
+                  <Font name="Rockwell" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="username_field" layoutX="120.0" layoutY="165.0" prefHeight="36.0" prefWidth="164.0" promptText="Korisničko ime" style="-fx-background-color: transparent; -fx-border-color: #67d8ef; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="passwd_field" layoutX="120.0" layoutY="248.0" prefHeight="36.0" prefWidth="164.0" promptText="Lozinka" style="-fx-background-color: transparent; -fx-border-color: #67d8ef; -fx-border-width: 0px 0px 2px;" />
+            <FontAwesomeIconView fill="#67d8ef" glyphName="USER" layoutX="101.0" layoutY="194.0" scaleX="2.0" scaleY="2.0" />
+            <FontAwesomeIconView fill="#67d8ef" glyphName="KEY" layoutX="100.0" layoutY="277.0" scaleX="2.0" scaleY="2.0" />
+            <Button fx:id="login_btn" layoutX="109.0" layoutY="339.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="159.0" style="-fx-background-color: #67d8ef;" text="Prijavi se" textFill="WHITE" onAction="#handleLoginButtonClick">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <FontAwesomeIconView fill="#67d8ef" glyphName="USERS" layoutX="167.0" layoutY="78.0" size="35" />
+            <Text fill="#67d8ef" layoutX="116.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dobrodošli nazad!">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="close_btn" layoutX="328.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: transparent;" onAction="#handleCloseButtonClick">
+               <graphic>
+                  <FontAwesomeIconView fill="#67d8ef" glyphName="CLOSE" size="18" />
+               </graphic>
+            </Button>
+            <Text fill="#67d8ef" layoutX="148.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prijavite se">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#67d8ef" layoutX="77.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nemate nalog?">
+               <font>
+                  <Font name="Rockwell" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="rgstr_btn" layoutX="185.0" layoutY="404.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Registrujte se!" textFill="#307c8a" onAction="#handleRegisterButtonClick">
+               <font>
+                  <Font name="Rockwell" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" text="" style="-fx-text-fill: red;" alignment="CENTER">
+               <font>
+                     <Font name="Rockwell" size="15.0" />
+               </font>
+               <AnchorPane.leftAnchor>20.0</AnchorPane.leftAnchor>
+               <AnchorPane.rightAnchor>20.0</AnchorPane.rightAnchor>
+               <AnchorPane.topAnchor>434.0</AnchorPane.topAnchor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

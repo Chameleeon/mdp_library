@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteka.gui.books.AddPopupController">
+   <children>
+      <Label layoutX="259.0" layoutY="14.0" text="Dodaj knjigu">
+         <font>
+            <Font name="Century Gothic Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="75.0" prefHeight="34.0" prefWidth="109.0" text="Naslov:">
+         <font>
+            <Font name="Century Gothic Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="106.0" prefHeight="34.0" prefWidth="109.0" text="Autor:">
+         <font>
+            <Font name="Century Gothic Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="276.0" prefHeight="34.0" prefWidth="109.0" text="Količina:">
+         <font>
+            <Font name="Century Gothic Bold" size="23.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="add_button" layoutX="40.0" layoutY="685.0" onAction="#handleSendOrder" prefHeight="45.0" prefWidth="206.0" styleClass="next_btn" stylesheets="@css/window.css" text="Dodaj" textFill="#fff4f4">
+         <font>
+            <Font name="Century Gothic Bold" size="19.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CHECK" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="cancel_btn" layoutX="493.0" layoutY="685.0" onAction="#handleCancelOrder" prefHeight="45.0" prefWidth="206.0" styleClass="reject_btn" stylesheets="@css/window.css" text="Otkaži" textFill="#fff4f4">
+         <font>
+            <Font name="Century Gothic Bold" size="19.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" />
+         </graphic>
+      </JFXButton>
+      <TextField fx:id="amount_field" layoutX="246.0" layoutY="279.0" prefHeight="29.0" prefWidth="63.0" promptText="0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 0;" />
+      <Label layoutX="30.0" layoutY="140.0" prefHeight="34.0" prefWidth="109.0" text="Prevod:">
+         <font>
+            <Font name="Century Gothic Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="174.0" prefHeight="34.0" prefWidth="206.0" text="Datum izdavanja:">
+         <font>
+            <Font name="Century Gothic Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="208.0" prefHeight="34.0" prefWidth="206.0" text="Jezik:">
+         <font>
+            <Font name="Century Gothic Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="242.0" prefHeight="34.0" prefWidth="206.0" text="Naslovna strana:">
+         <font>
+            <Font name="Century Gothic Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cover_field" layoutX="246.0" layoutY="245.0" prefHeight="29.0" prefWidth="340.0" promptText="Naslovna" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 0;" />
+      <TextField fx:id="language_field" layoutX="246.0" layoutY="211.0" prefHeight="29.0" prefWidth="340.0" promptText="Jezik" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 0;" />
+      <TextField fx:id="date_field" layoutX="246.0" layoutY="177.0" prefHeight="29.0" prefWidth="340.0" promptText="Datum izdavanja" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 0;" />
+      <TextField fx:id="translator_field" layoutX="246.0" layoutY="143.0" prefHeight="29.0" prefWidth="340.0" promptText="Prevod" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 0;" />
+      <TextField fx:id="author_field" layoutX="246.0" layoutY="109.0" prefHeight="29.0" prefWidth="340.0" promptText="Autor" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 0;" />
+      <TextField fx:id="title_field" layoutX="246.0" layoutY="77.0" prefHeight="29.0" prefWidth="340.0" promptText="Naslov" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 0;" />
+      <Label layoutX="30.0" layoutY="310.0" prefHeight="34.0" prefWidth="109.0" text="Sadržaj:">
+         <font>
+            <Font name="Century Gothic Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="content_field" layoutX="33.0" layoutY="344.0" prefHeight="335.0" prefWidth="672.0" promptText="Sadržaj" />
+      <Label fx:id="error_label" layoutX="30.0" layoutY="650.0" prefHeight="34.0" prefWidth="340.0" textFill="red" visible="false">
+      <font>
+         <Font name="Century Gothic Bold" size="16.0" />
+      </font>
+</Label>
+   </children>
+</Pane>

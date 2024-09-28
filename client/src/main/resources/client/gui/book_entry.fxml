@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="160.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.BookEntryController">
+   <children>
+      <ImageView fx:id="book_cover" fitHeight="162.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="title_label" alignment="CENTER" prefHeight="30.0" prefWidth="172.0" text="Naslov">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="author_label" alignment="CENTER" prefHeight="30.0" prefWidth="139.0" text="Autor">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="release_date_label" alignment="CENTER" layoutX="47.0" layoutY="10.0" prefHeight="30.0" prefWidth="93.0" text="Datum objavljivanja">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="language_label" alignment="CENTER" layoutX="169.0" layoutY="10.0" prefHeight="30.0" prefWidth="81.0" text="Jezik">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="amount_label" alignment="CENTER" prefHeight="19.0" prefWidth="46.0" text="Količ">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="cart_button" contentDisplay="GRAPHIC_ONLY" prefHeight="30.0" prefWidth="31.0" onAction="#handleCartButton">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/shopping-cart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="info_button" contentDisplay="GRAPHIC_ONLY" onAction="#handleInfoButton">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/blue-information-button-18667.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+   <padding>
+      <Insets left="5.0" />
+   </padding>
+</HBox>
